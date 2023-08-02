@@ -14,4 +14,21 @@
     print_r ($strval);
    }
    return numtoarray(10001);
-  
+  - Write function that translates a text to Pig Latin and back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding ‘ay’. “Join with yellowfish” becomes “oinjay ithway ellowfishyay
+- function wordtopiglatin($text){
+    $words= explode(' ',$text);
+    foreach($words as $word){
+        $firstLett = substr($word,0,1);
+        $balword = substr($word,1);
+        if(preg_match('/^[aeiou]/i',$firstLett)){
+            $finaloutput= $word . 'way';
+            echo $finaloutput;
+        }
+        else{
+            $finaloutput = $balword . $firstLett. 'ay';
+            echo $finaloutput;
+        }
+    }
+}
+return wordtopiglatin("YellowFish");
+-

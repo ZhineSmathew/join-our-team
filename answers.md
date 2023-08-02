@@ -5,4 +5,13 @@
 - github https://github.com/ZhineSmathew
 - linkedin https://www.linkedin.com/in/shine-s-profile/
 - resume  https://resume.io/r/8gkhIxusL
+-  real stuff
+-  Laravel,PHP,Wordpress
+-  Write a function that takes a number and returns an array of its digits
+-  function numtoarray($val){
+    $strval=(string) $val;
+    $strval=str_split($strval);
+    print_r ($strval);
+   }
+   return numtoarray(10001);
   

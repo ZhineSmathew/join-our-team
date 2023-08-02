@@ -31,4 +31,12 @@
     }
 }
 return wordtopiglatin("YellowFish");
--
+- Write a function that rotates an array by k elements. For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the array
+- function rotarray($arr){
+    $reverseArray=implode('',$arr);
+    $firstval = substr($reverseArray,2);
+    $secval = substr($reverseArray,0,2);
+    echo $firstval.$secval;
+}
+$arr = array(1,2,3,4,5,6,7);
+return rotarray($arr);
